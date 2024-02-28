@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro Mercado Liebre</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/Rabbit Market/public/css/registro-login.css" />
+    <link rel="stylesheet" href="/Rabbit Market/public/css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="top-header">
+        <div class="logo">
+          <a href="./index.html">
+            <img
+              src="/Rabbit Market/public/images/logo-mercado-liebre.svg"
+              alt="Logo de MercadoLiebre"/>
+          </a>
+          <div class="search-box">
+            <form action="">
+              <input
+                type="text"
+                name="search"
+                id="srch"
+                placeholder="Buscar productos, marcas y más"
+              />
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+          </div>
+        </div>
+        <p>
+          <i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta
+          de crédito
+        </p>
+      </div>
+      <nav>
+        <ul class="nav1">
+          <li><a href="#">Ofertas</a></li>
+          <li><a href="#">Tiendas Oficiales</a></li>
+          <li><a href="#">Vender</a></li>
+          <li><a href="#">Ayuda</a></li>
+        </ul>
+        <ul class="nav2">
+          <li>
+            <a href="./registro.html"
+              >Creá tu cuenta <i class="far fa-id-card"></i
+            ></a>
+          </li>
+          <li>
+            <a href="./login.html">Ingresá <i class="fas fa-sign-in-alt"></i></a>
+          </li>
+          <li>
+            <a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a>
+          </li>
+        </ul>
+      </nav>
+      <div class="burger-menu">
+        <i class="fa fa-bars burger"></i>
+      </div>
+    </header>
+    <main class="main-register">
+      <h2>Registrate con nosotros</h2>
+      <form class="form-register" action="">
+        <div class="label-input">
+          <label> <i class="fas fa-user"></i> Nombre y apellido:</label>
+          <input
+            class="input-register"
+            type="text"
+            name="nombre"
+            placeholder="Nombre y apellido"
+          />
+          <label> <i class="fas fa-user"></i> Nombre de usuario:</label>
+          <input
+            class="input-register"
+            type="text"
+            name="Usuario"
+            placeholder="Nombre de usuario"
+          />
+          <label><i class="fas fa-envelope"></i> Email:</label>
+          <input
+            class="input-register"
+            type="email"
+            name="email"
+            placeholder="Email"
+          />
+          <label><i class="fas fa-birthday-cake"></i> Fecha De Nacimiento:</label>
+          <input
+            class="input-register"
+            type="date"
+            name="edad"
+            value="2024-02-28"
+          />
+          <label><i class="fas fa-user"></i> ¿Comprador o Vendedor?</label>
+          <select class="selects" name="usertype" required>
+            <option value="Comprador">Comprador</option>
+            <option value="Vendedor">Vendedor</option>
+          </select>
+          <br>
+          <fieldset>
+            <legend>Categorias de interés:</legend>
+            <div>
+              <input type="checkbox" id="horns" name="electro" checked />
+              <label for="scales">Electronica</label>
+            </div>
+            <div>
+              <input type="checkbox" id="horns" name="moda" />
+              <label for="horns">Moda</label>
+            </div>
+            <div>
+              <input type="checkbox" id="horns" name="hogar" />
+              <label for="horns">Hogar</label>
+            </div>
+            <div>
+              <input type="checkbox" id="horns" name="jugueteria" />
+              <label for="horns">jugueteria</label>
+            </div>
+            <div>
+              <input type="checkbox" id="horns" name="vida" />
+              <label for="horns">Vida sana</label>
+            </div>
+          </fieldset>
+          <br>
+          <label><i class="fas fa-lock"></i> Contraseña:</label>
+          <input
+            class="input-register"
+            type="password"
+            name="password"
+            placeholder="Contraseña"
+          />
+          <label><i class="fas fa-lock"></i> Confirmar Contraseña:</label>
+          <input
+            class="input-register"
+            type="password"
+            name="password"
+            placeholder="Confirmar contraseña"
+          />
+          <div class="box-button">
+            <button id="button1" type="reset">Borrar</button>
+            <button id="button2" type="submit"><a href="/Rabbit Market/src/index.html">Enviar</button>
+          </div>
+        </div>
+      </form>
+    </main>
+    <footer class="main-footer">
+      <article class="footer-data">
+        <i class="fas fa-credit-card"></i>
+        <h2>Pagá con tarjeta o en efectivo</h2>
+        <p>
+          Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o
+          efectivo en puntos de pago. ¡Y siempre es seguro!
+        </p>
+      </article>
+      <article class="footer-data">
+        <i class="fas fa-gift"></i>
+        <h2>Envío gratis desde $ 1.999</h2>
+        <p>
+          Solo por estar registrado en Mercado Liebre tenés envíos gratis en
+          miles de productos. Es un beneficio de Mercado Puntos.
+        </p>
+      </article>
+      <article class="footer-data">
+        <i class="fas fa-user-shield"></i>
+        <h2>Seguridad, de principio a fin</h2>
+        <p>
+          ¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas
+          hacer, porque estás siempre protegido.
+        </p>
+      </article>
+    </footer>
+  </body>
+</html>
