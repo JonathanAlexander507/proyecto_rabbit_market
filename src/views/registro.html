@@ -12,17 +12,18 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
     />
-    <link rel="stylesheet" href="/Rabbit Market/public/css/registro-login.css" />
-    <link rel="stylesheet" href="/Rabbit Market/public/css/styles.css" />
+    <link rel="stylesheet" href="/public/css/styles.css" />
+    <link rel="stylesheet" href="/public/css/registro-login.css" />
   </head>
   <body>
     <header>
       <div class="top-header">
         <div class="logo">
-          <a href="./index.html">
+          <a href="/src/views/index.html">
             <img
-              src="/Rabbit Market/public/images/logo-mercado-liebre.svg"
-              alt="Logo de MercadoLiebre"/>
+              src="/public/images/logo-mercado-liebre.svg"
+              alt="Logo de MercadoLiebre"
+            />
           </a>
           <div class="search-box">
             <form action="">
@@ -50,12 +51,14 @@
         </ul>
         <ul class="nav2">
           <li>
-            <a href="/registro.html"
+            <a href="/src/views/registro.html"
               >Creá tu cuenta <i class="far fa-id-card"></i
             ></a>
           </li>
           <li>
-            <a href="/login.html">Ingresá <i class="fas fa-sign-in-alt"></i></a>
+            <a href="/src/views/login.html"
+              >Ingresá <i class="fas fa-sign-in-alt"></i
+            ></a>
           </li>
           <li>
             <a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a>
@@ -91,7 +94,9 @@
             name="email"
             placeholder="Email"
           />
-          <label><i class="fas fa-birthday-cake"></i> Fecha De Nacimiento:</label>
+          <label
+            ><i class="fas fa-birthday-cake"></i> Fecha De Nacimiento:</label
+          >
           <input
             class="input-register"
             type="date"
@@ -103,7 +108,7 @@
             <option value="Comprador">Comprador</option>
             <option value="Vendedor">Vendedor</option>
           </select>
-          <br>
+          <br />
           <fieldset>
             <legend>Categorias de interés:</legend>
             <div>
@@ -127,7 +132,7 @@
               <label for="horns">Vida sana</label>
             </div>
           </fieldset>
-          <br>
+          <br />
           <label><i class="fas fa-lock"></i> Contraseña:</label>
           <input
             class="input-register"
@@ -144,7 +149,9 @@
           />
           <div class="box-button">
             <button id="button1" type="reset">Borrar</button>
-            <button id="button2" type="submit"><a href="/Rabbit Market/src/index.html">Enviar</button>
+            <a href="/src/views/index.html"
+              ><button id="button2" type="submit">Enviar</button></a
+            >
           </div>
         </div>
       </form>
